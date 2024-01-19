@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Inditest" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:toolbarStyle">@style/InditestToolbarStyle</item>
+        <item name="toolbarStyle">@style/InditestToolbarStyle</item>
+    </style>
+
+    <style name="InditestToolbarStyle" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="android:titleTextAppearance">@style/InditestTitleTextAppearance</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="titleTextAppearance">@style/InditestTitleTextAppearance</item>
+        <item name="titleTextColor">@color/black</item>
+    </style>
+
+    <style name="InditestToolbarStyle.Transparent" parent="InditestToolbarStyle">
+        <item name="android:titleTextAppearance">@style/InditestTitleTextAppearance.Inverse</item>
+        <item name="titleTextAppearance">@style/InditestTitleTextAppearance.Inverse</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="InditestTitleTextAppearance">
+        <item name="android:fontFamily">@font/oswald_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="InditestTitleTextAppearance.Inverse" parent="InditestTitleTextAppearance">
+        <item name="android:fontFamily">@font/oswald_medium</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="InditestLargeTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="InditestSmallTextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+</resources>

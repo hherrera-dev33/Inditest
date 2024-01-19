@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size_mini">52dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="big_padding">20dp</dimen>
+    <dimen name="emptyview_padding">26dp</dimen>
+</resources>

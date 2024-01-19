@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@drawable/list_item_selector"
+    android:paddingStart="@dimen/default_padding"
+    android:paddingTop="@dimen/default_padding">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_user"
+        android:layout_width="@dimen/image_size_mini"
+        android:layout_height="@dimen/image_size_mini"
+        android:background="@drawable/shape_circle"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier_user_labels"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_user_labels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="tv_user_name,tv_user_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_padding"
+        android:layout_marginTop="3dp"
+        android:gravity="top|start"
+        android:singleLine="true"
+        android:textAppearance="@style/InditestLargeTextAppearance"
+        android:textDirection="locale"
+        app:layout_constraintBottom_toTopOf="@+id/tv_user_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier_user_labels"
+        app:layout_constraintTop_toTopOf="@+id/iv_user"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:text="José Luís Rodriguez Perez" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_user_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_padding"
+        android:layout_marginBottom="3dp"
+        android:gravity="top|start"
+        android:singleLine="true"
+        android:textDirection="locale"
+        android:textAppearance="@style/InditestSmallTextAppearance"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier_user_labels"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name"
+        tools:text="joseluisrodriguez@gmail.com" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginTop="@dimen/default_padding"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrier_user_labels"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+</androidx.constraintlayout.widget.ConstraintLayout>

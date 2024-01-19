@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IconifiedItemView">
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+        <attr name="iconLeft" format="integer" />>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="subtitleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="subtitleTextColor" format="color"/>
+    </declare-styleable>
+
+</resources>

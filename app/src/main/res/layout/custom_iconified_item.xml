@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="@dimen/big_padding"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textBarriers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/textBarriers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="itemTitle,itemSubtitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAppearance="@style/InditestSmallTextAppearance"
+        app:layout_constraintBottom_toTopOf="@+id/itemSubtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textBarriers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/itemSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAppearance="@style/InditestLargeTextAppearance"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textBarriers"
+        app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textBarriers"
+        app:layout_constraintTop_toBottomOf="@+id/itemSubtitle"
+        app:layout_constraintVertical_bias="1" />
+
+</merge>

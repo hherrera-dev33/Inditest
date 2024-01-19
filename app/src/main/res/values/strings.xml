@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Inditest</string>
+    <string name="screen_user_list">CONTACTOS</string>
+    <string name="footer_retry">No se ha podido cargar contenido. <b>Toca para reintentar</b></string>
+    <string name="empty_user_list">Ups! No hay contactos que mostrar</string>
+    <string name="error_user_list">No hemos podido recuperar datos de contactos. Arrastra hacia abajo para refrescar</string>
+    <string name="user_name_surname">Nombre y apellidos</string>
+    <string name="user_email">Email</string>
+    <string name="user_gender">Género</string>
+    <string name="gender_male">Hombre</string>
+    <string name="gender_female">Mujer</string>
+    <string name="gender_other">Otro</string>
+    <string name="user_phone">Teléfono</string>
+    <string name="user_registry">Fecha de registro</string>
+    <string name="user_address">Dirección</string>
+    <string name="search">Buscar contactos</string>
+    <string name="feature_unavailable">Esta función no está disponible para esta versión de la app</string>
+</resources>
