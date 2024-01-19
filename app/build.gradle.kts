@@ -27,6 +27,14 @@ android {
         }
     }
 
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("../buildsystem/debug.jks")
+            storePassword = "1nd17357"
+            keyAlias = "inditestdebugkey"
+            keyPassword = "1nd17357"
+        }
+    }
 
     buildTypes {
         release {
